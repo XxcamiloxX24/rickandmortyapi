@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-6" style="padding-right: 5%; padding-left: 0%;" *ngFor="let personajes of personajess">
+        <div class="row" style="background-color: gray; border-radius: 7%;">
+            <div class="col-6">
+                <a [routerLink]="['/personajes-details', personajes.id]">
+                    <img [src]="personajes.image" [alt]="personajes.name" class="card-img-top" style="border-radius: 5% 0 0 5%;">
+                </a>
+            </div>
+            <div class="col-6">
+                <div class="header">
+                    
+                    <a [routerLink]="['/personajes-details', personajes.id]">
+                        <h2>{{personajes.name}}</h2>
+                    </a>
+                    <h4 class="text-muted" style="font-family:'Helvetica','Verdana','Monaco',sans-serif;">{{personajes.status}} <span>-</span>{{personajes.species}}</h4>
+                </div>
+                <div>
+                    <h4 style="font-family:'Helvetica','Verdana','Monaco',sans-serif;">Last known location:</h4>
+                    <h4 class="text-muted" style="font-family:'Helvetica','Verdana','Monaco',sans-serif;">{{personajes.location}}</h4>
+                    <h4 style="font-family:'Helvetica','Verdana','Monaco',sans-serif;">First seen in:</h4>
+                    <h4 class="text-muted" style="font-family:'Helvetica','Verdana','Monaco',sans-serif; color: white;">{{personajes.origin}}</h4>
+                </div>
+            </div>
+        </div>
+        <br><br>
+    </div>
+   
+
+</div>

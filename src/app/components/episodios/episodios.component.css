@@ -1,0 +1,37 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1%;
+    padding-left: 0%;
+    padding-right: 2%;
+    font-weight: bold;
+}
+ul li{
+    display: inline-block;
+    padding: 0px 40px;
+}
+a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+.fondoepisodios{
+    background-image: url('../../../assets/imagenes/Fondo_Episodios.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 30%;
+}
+
+.epi{
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+.accordion-body{
+    background-color: transparent;
+    text-align: center;
+}
